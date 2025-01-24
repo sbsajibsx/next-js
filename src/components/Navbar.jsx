@@ -14,7 +14,7 @@ const Navbar = async () => {
             <Link href="/">Home</Link>
           </li>
           <li className="outline outline-black px-2 rounded-md">
-            <Link href="/profile">Page</Link>
+            <Link href="/profile">Profile</Link>
           </li>
           {user ? (
             <li className="outline outline-black px-2 rounded-md">
