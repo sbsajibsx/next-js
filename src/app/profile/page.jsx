@@ -1,7 +1,7 @@
-// "use client"
+
 import { redirect } from "next/navigation";
 import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
-const page = async () => {
+const Profile = async () => {
   const { isAuthenticated } = getKindeServerSession();
   const isAuth = await isAuthenticated();
   if (!isAuth) {
@@ -16,4 +16,4 @@ const page = async () => {
   );
 };
 
-export default page;
+export default Profile;
